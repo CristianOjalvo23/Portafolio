@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio Profesional</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="src/styles/main.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>Dev<span class="logo-bracket">/&gt;</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Inicio</a></li>
+        <li><a href="#about" class="nav-link">Sobre mí</a></li>
+        <li><a href="#skills" class="nav-link">Habilidades</a></li>
+        <li><a href="#projects" class="nav-link">Proyectos</a></li>
+        <li><a href="#contact" class="nav-link">Contacto</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <span class="theme-icon">🌙</span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="grid-overlay"></div>
+      <div class="glow glow-1"></div>
+      <div class="glow glow-2"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Disponible para proyectos
+      </div>
+      <h1 class="hero-title">
+        Hola, soy <span class="gradient-text" id="heroName">Cristian Ojalvo</span>
+      </h1>
+      <div class="hero-subtitle">
+        <span>Soy </span>
+        <span class="typewriter" id="typewriter"></span>
+        <span class="cursor">|</span>
+      </div>
+      <p class="hero-description">
+        Desarrollo experiencias digitales modernas, funcionales y escalables.
+        Apasionado por el código limpio y el diseño centrado en el usuario.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">Ver proyectos</a>
+        <a href="#contact" class="btn btn-outline">Contáctame</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-number">3+</span><span class="stat-label">Años exp.</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-number">20+</span><span class="stat-label">Proyectos</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-number">15+</span><span class="stat-label">Clientes</span></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="code-card">
+        <div class="code-header">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span class="code-filename">portfolio.ts</span>
+        </div>
+        <pre class="code-body"><code><span class="c-keyword">const</span> <span class="c-var">developer</span> = {
+  <span class="c-prop">name</span>: <span class="c-string">"Tu Nombre"</span>,
+  <span class="c-prop">role</span>: <span class="c-string">"Full Stack Dev"</span>,
+  <span class="c-prop">skills</span>: [
+    <span class="c-string">"TypeScript"</span>,
+    <span class="c-string">"React"</span>,
+    <span class="c-string">"Node.js"</span>,
+  ],
+  <span class="c-prop">passion</span>: <span class="c-string">"Clean Code"</span>,
+  <span class="c-prop">available</span>: <span class="c-keyword">true</span>,
+};</code></pre>
+      </div>
+    </div>
+    <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+      <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+    </a>
+  </section>
+
+  <!-- About Section -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// sobre mí</span>
+        <h2 class="section-title">Quién soy</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-image-wrap">
+          <div class="about-image-frame">
+            <div class="about-avatar">
+              <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="100" cy="80" r="45" fill="var(--accent)"/>
+                <ellipse cx="100" cy="175" rx="65" ry="45" fill="var(--accent)"/>
+              </svg>
+            </div>
+            <div class="about-badge-card">
+              <span class="about-badge-icon">🚀</span>
+              <div>
+                <div class="about-badge-title">Full Stack</div>
+                <div class="about-badge-sub">Developer</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-content">
+          <p class="about-text">
+            Soy un desarrollador apasionado con más de <strong>3 años de experiencia</strong> construyendo
+            aplicaciones web modernas. Me especializo en crear soluciones que combinan
+            un diseño atractivo con una arquitectura sólida.
+          </p>
+          <p class="about-text">
+            Mi enfoque está en escribir código limpio, mantenible y escalable.
+            Disfruto trabajar en proyectos desafiantes que me permitan seguir aprendiendo
+            y aportando valor real a los usuarios.
+          </p>
+          <div class="about-info-grid">
+            <div class="info-item">
+              <span class="info-label">Nombre</span>
+              <span class="info-value">Tu Nombre</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Email</span>
+              <span class="info-value">cristianojalvorevollo@gmail.com</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Ubicación</span>
+              <span class="info-value">Tu Ciudad, País</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Disponibilidad</span>
+              <span class="info-value available">Disponible ✓</span>
+            </div>
+          </div>
+          <a href="#" class="btn btn-primary" download>Descargar CV</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// habilidades</span>
+        <h2 class="section-title">Stack tecnológico</h2>
+      </div>
+      <div class="skills-categories">
+        <div class="skill-category">
+          <h3 class="category-title"><span class="category-icon">🎨</span> Frontend</h3>
+          <div class="skills-grid">
+            <div class="skill-card" data-level="90">
+              <div class="skill-icon">⚛️</div>
+              <div class="skill-name">React</div>
+              <div class="skill-bar"><div class="skill-fill" style="--w:90%"></div></div>
+            </div>
+            <div class="skill-card" data-level="88">
+              <div class="skill-icon">🔷</div>
+              <div class="skill-name">TypeScript</div>
+              <div class="skill-bar"><div class="skill-fill" style="--w:88%"></div></div>
+            </div>
+            <div class="skill-card" data-level="85">
+              <div class="skill-icon">▲</div>
+              <div class="skill-name">Next.js</div>
+              <div class="skill-bar"><div class="skill-fill" style="--w:85%"></div></div>
+            </div>
+            <div class="skill-card" data-level="80">
+              <div class="skill-icon">🎨</div>
+              <div class="skill-name">Tailwind CSS</div>
+              <div class="skill-bar"><div class="skill-fill" style="--w:80%"></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3 class="category-title"><span class="category-icon">⚙️</span> Backend</h3>
+          <div class="skills-grid">
+            <div class="skill-card" data-level="85">
+              <div class="skill-icon">🟢</div>
+              <div class="skill-name">Node.js</div>
+              <div class="skill-bar"><div class="skill-fill" style="--w:85%"></div></div>
+            </div>
+            <div class="skill-card" data-level="80">
+              <div class="skill-icon">🚂</div>
+              <div class="skill-name">Express</div>
+              <div class="skill-bar"><div class="skill-fill" style="--w:80%"></div></div>
+            </div>
+            <div class="skill-card" data-level="75">
+              <div class="skill-icon">🐘</div>
+              <div class="skill-name">PostgreSQL</div>
+              <div class="skill-bar"><div class="skill-fill" style="--w:75%"></div></div>
+            </div>
+            <div class="skill-card" data-level="70">
+              <div class="skill-icon">🍃</div>
+              <div class="skill-name">MongoDB</div>
+              <div class="skill-bar"><div class="skill-fill" style="--w:70%"></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3 class="category-title"><span class="category-icon">🛠️</span> Herramientas</h3>
+          <div class="skills-grid">
+            <div class="skill-card" data-level="90">
+              <div class="skill-icon">🐙</div>
+              <div class="skill-name">Git / GitHub</div>
+              <div class="skill-bar"><div class="skill-fill" style="--w:90%"></div></div>
+            </div>
+            <div class="skill-card" data-level="75">
+              <div class="skill-icon">🐳</div>
+              <div class="skill-name">Docker</div>
+              <div class="skill-bar"><div class="skill-fill" style="--w:75%"></div></div>
+            </div>
+            <div class="skill-card" data-level="70">
+              <div class="skill-icon">☁️</div>
+              <div class="skill-name">AWS / Cloud</div>
+              <div class="skill-bar"><div class="skill-fill" style="--w:70%"></div></div>
+            </div>
+            <div class="skill-card" data-level="85">
+              <div class="skill-icon">🔧</div>
+              <div class="skill-name">REST / GraphQL</div>
+              <div class="skill-bar"><div class="skill-fill" style="--w:85%"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// proyectos</span>
+        <h2 class="section-title">Trabajo destacado</h2>
+      </div>
+      <div class="projects-filter">
+        <button class="filter-btn active" data-filter="all">Todos</button>
+        <button class="filter-btn" data-filter="web">Web App</button>
+        <button class="filter-btn" data-filter="mobile">Mobile</button>
+        <button class="filter-btn" data-filter="api">API</button>
+      </div>
+      <div class="projects-grid" id="projectsGrid">
+        <article class="project-card" data-category="web">
+          <div class="project-image">
+            <div class="project-placeholder" style="--hue:220">
+              <span>🛒</span>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="project-link" aria-label="Ver demo">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+              <a href="#" class="project-link" aria-label="Ver código">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="tag">React</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">Node.js</span>
+            </div>
+            <h3 class="project-title">E-Commerce Platform</h3>
+            <p class="project-desc">Plataforma de comercio electrónico completa con carrito, pagos y panel de administración.</p>
+          </div>
+        </article>
+        <article class="project-card featured" data-category="web">
+          <div class="project-featured-badge">Destacado</div>
+          <div class="project-image">
+            <div class="project-placeholder" style="--hue:280">
+              <span>📊</span>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="project-link" aria-label="Ver demo">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+              <a href="#" class="project-link" aria-label="Ver código">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="tag">Next.js</span>
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">Prisma</span>
+            </div>
+            <h3 class="project-title">Dashboard Analytics</h3>
+            <p class="project-desc">Panel de análisis en tiempo real con gráficos interactivos, reportes y gestión de usuarios.</p>
+          </div>
+        </article>
+        <article class="project-card" data-category="api">
+          <div class="project-image">
+            <div class="project-placeholder" style="--hue:160">
+              <span>🔗</span>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="project-link" aria-label="Ver demo">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+              <a href="#" class="project-link" aria-label="Ver código">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="tag">Node.js</span>
+              <span class="tag">GraphQL</span>
+              <span class="tag">MongoDB</span>
+            </div>
+            <h3 class="project-title">REST API Service</h3>
+            <p class="project-desc">API RESTful escalable con autenticación JWT, rate limiting y documentación automática.</p>
+          </div>
+        </article>
+        <article class="project-card" data-category="mobile">
+          <div class="project-image">
+            <div class="project-placeholder" style="--hue:30">
+              <span>📱</span>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="project-link" aria-label="Ver demo">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+              <a href="#" class="project-link" aria-label="Ver código">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="tag">React Native</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">Firebase</span>
+            </div>
+            <h3 class="project-title">Task Manager App</h3>
+            <p class="project-desc">Aplicación móvil de gestión de tareas con sincronización en tiempo real y notificaciones push.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section section-alt" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// contacto</span>
+        <h2 class="section-title">Trabajemos juntos</h2>
+        <p class="section-subtitle">¿Tienes un proyecto en mente? Me encantaría escucharte.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-card">
+            <div class="contact-icon">📧</div>
+            <div>
+              <div class="contact-label">Email</div>
+              <a href="mailto:tu@email.com" class="contact-value">tu@email.com</a>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon">📍</div>
+            <div>
+              <div class="contact-label">Ubicación</div>
+              <span class="contact-value">Tu Ciudad, País</span>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon">💼</div>
+            <div>
+              <div class="contact-label">LinkedIn</div>
+              <a href="#" class="contact-value">linkedin.com/in/tunombre</a>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon">🐙</div>
+            <div>
+              <div class="contact-label">GitHub</div>
+              <a href="#" class="contact-value">github.com/tunombre</a>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name" class="form-label">Nombre</label>
+              <input type="text" id="name" name="name" class="form-input" placeholder="Tu nombre" required />
+              <span class="form-error" id="nameError"></span>
+            </div>
+            <div class="form-group">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" id="email" name="email" class="form-input" placeholder="tu@email.com" required />
+              <span class="form-error" id="emailError"></span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="subject" class="form-label">Asunto</label>
+            <input type="text" id="subject" name="subject" class="form-input" placeholder="¿En qué puedo ayudarte?" required />
+            <span class="form-error" id="subjectError"></span>
+          </div>
+          <div class="form-group">
+            <label for="message" class="form-label">Mensaje</label>
+            <textarea id="message" name="message" class="form-input form-textarea" placeholder="Cuéntame sobre tu proyecto..." required rows="5"></textarea>
+            <span class="form-error" id="messageError"></span>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+            <span class="btn-text">Enviar mensaje</span>
+            <span class="btn-icon">→</span>
+          </button>
+          <div class="form-success" id="formSuccess">
+            ✅ ¡Mensaje enviado! Te responderé pronto.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <a href="#home" class="nav-logo">
+          <span class="logo-bracket">&lt;</span>Dev<span class="logo-bracket">/&gt;</span>
+        </a>
+        <p class="footer-text">Diseñado y desarrollado con ❤️ usando TypeScript</p>
+        <div class="footer-socials">
+          <a href="#" class="social-link" aria-label="GitHub">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="LinkedIn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="Twitter">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Tu Nombre. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="src/scripts/main.js"></script>
+</body>
+</html>
